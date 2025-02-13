@@ -1,0 +1,35 @@
+.game-list {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  min-height: 250px;
+}
+
+.results-page {
+  gap: 30px;
+  flex-wrap: wrap;
+  align-content: center
+}
+
+.menu-results {
+  position: absolute;
+  top: 90%;
+}
+
+@media (max-width: 630px) {
+  .menu-results {
+    min-width: 50px;
+    left: 80%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 409px) {
+  .menu-results {
+    min-width: 50px;
+    left: 80%;
+    top: 10%;
+  }
+}

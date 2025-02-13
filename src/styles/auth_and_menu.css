@@ -1,0 +1,63 @@
+@import "dancingscript.css";
+
+/* главный контейнер */
+.main-page {
+  background-color: var(--main-bg-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+/* контейнер с кнопками/инпутами */
+.main-page-box {
+  background-color: white;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  text-align: center;
+}
+
+.separator {
+  border-top: 2px solid var(--main-bg-color);
+  z-index: 1;
+  padding: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* анимация слов на фоне */
+.word {
+  color: white;
+  position: absolute;
+  opacity: 0;
+  animation: appearAndHide 10s ease-in-out forwards;
+  font-family: 'DancingScript', cursive;
+}
+
+@keyframes appearAndHide {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 1;
+  }
+  80% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}

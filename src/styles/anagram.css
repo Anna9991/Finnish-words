@@ -1,0 +1,51 @@
+
+.word-container,
+.letter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  min-width: 410px;
+}
+
+.word-container {
+  min-height: 80px;
+}
+
+.dropzone, .letter {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid var(--main-bg-color);
+  border-radius: 5px;
+  font-size: 24px;
+  color: var(--main-bg-color);
+  cursor: pointer;
+  user-select: none;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone {
+  border-style: dashed;
+}
+
+.dropzone.correct {
+  border-color: green;
+}
+
+.dropzone.incorrect {
+  border-color: red;
+}
+
+.letter {
+  transition: opacity 0.3s ease;
+}
+
+.letter.dragging {
+  opacity: 0.5;
+}

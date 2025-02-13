@@ -1,0 +1,27 @@
+@import "dancingscript.css";
+
+#container {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message {
+  font-size: 50px;
+  font-family: 'DancingScript', cursive;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 5s ease-out forwards;
+}
+
+.errorcode {
+  font-size: 150px;
+  font-family: 'DancingScript', cursive;
+  opacity: 0;
+  animation: fadeIn 5s ease-out forwards;
+}

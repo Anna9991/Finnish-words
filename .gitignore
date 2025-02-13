@@ -1,0 +1,10 @@
+.env
+firebase.json
+firebase-debug.log
+serviceAccountKey.json
+
+node_modules/
+dist/
+.cache/
+.vscode/
+.DS_Store

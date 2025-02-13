@@ -1,0 +1,53 @@
+.grid-match {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  background-color: white;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 10px;
+}
+
+.card-front {
+  background-color: var(--main-bg-color);
+}
+
+.card-back {
+  background-color: white;
+  color: var(--main-bg-color);
+  border: 2px solid var(--main-bg-color);
+  transform: rotateY(180deg);
+}
+
+.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.disappear {
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: scale(0.8);
+}

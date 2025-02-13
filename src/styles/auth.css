@@ -1,0 +1,53 @@
+h2 {
+  color: var(--main-bg-color);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.main-page-login {
+  position: relative;
+  z-index: 2;
+}
+
+.hide-login {
+  animation: erase 1s forwards;
+}
+
+.show-login {
+  animation: reveal 1s forwards;
+}
+
+.main-page-signup {
+  position: absolute;
+}
+
+.show-signup {
+  animation: fadeIn 1s forwards;
+}
+
+.hide-signup {
+  animation: hideSign 1s forwards;
+}
+
+@keyframes hideSign {
+  0% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    opacity: 0;
+    clip-path: inset(-100% 0 0 0);
+  }
+}
+
+.error-show {
+  color: red;
+  margin: 0;
+}
+
+.error-hide {
+  color: white;
+  margin: 0;
+}

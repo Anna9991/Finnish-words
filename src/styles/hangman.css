@@ -1,0 +1,25 @@
+
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-letter {
+  min-width: 40px;
+  max-height: 30px;
+  background-color: var(--main-bg-color);
+  border: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.word-display {
+  color: var(--main-bg-color);
+  font-size: 25px;
+  letter-spacing: 5px;
+}

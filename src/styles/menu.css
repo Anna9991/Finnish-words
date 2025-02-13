@@ -1,0 +1,7 @@
+.show-menu {
+  animation: reveal 1s forwards;
+}
+
+.hide-menu {
+  animation: erase 1s forwards;
+}
